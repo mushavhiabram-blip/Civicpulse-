@@ -1,0 +1,6 @@
+{
+  "name": "CivicPulse - Neighborhood Community & Ad Network",
+  "description": "Real-time community engagement platform for neighborhood events, volunteer opportunities, improvement tracking, and tiered local business sponsorships.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
