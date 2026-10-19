@@ -1,13 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ADROIT Advanced Security | Civicpulse</title>
+<script src="https://js.paystack.co/v1/inline.js"></script>
+<style>
+body{margin:0;font-family:system-ui;background:#0a0a0a;color:#fff}
+#adroit-top{position:sticky;top:0;z-index:9999;background:#111;border-bottom:2px solid gold;padding:10px;text-align:center}
+#adroit-top button{padding:10px 14px;margin:4px;border-radius:8px;border:none;font-weight:800}
+.gold{background:gold;color:#000} .white{background:#fff;color:#000}
+</style>
+</head>
+<body>
+<div id="adroit-top">
+<b style="color:gold">ADROIT ADVANCED SECURITY</b> - Paystack Secure
+<div>
+<button class="white" onclick="payAdroit(250000)">Home Secure R2,500</button>
+<button class="gold" onclick="payAdroit(1500000)">Executive R15,000</button>
+<button class="white" onclick="payAdroit(350000)">K9 Training R3,500</button>
+</div>
+</div>
+
+<div id="root"></div>
+<script type="module" src="/src/main.tsx"></script>
+
+<script>
+function payAdroit(amount){
+var handler = PaystackPop.setup({
+key: 'pk_live_YOUR_KEY_HERE',
+email: 'client@adroitsecurity.co.za',
+amount: amount,
+currency: 'ZAR',
+ref: 'ADROIT-'+Date.now(),
+callback: function(r){ alert('Paid! Ref: '+r.reference); },
+onClose: function(){}
+});
+handler.openIframe();
+}
+</script>
+</body>
 </html>
 
