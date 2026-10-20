@@ -122,7 +122,7 @@ export const App: React.FC = () => {
     // Step 2: Launch Sponsor Ad Campaign
     await new Promise(r => setTimeout(r, 1000));
     const sampleCampaigns = [
-      { name: 'Oakridge Corner Bistro & Espresso', tier: 'champion' as const, category: 'Dining & Cafe' as const, deal: 'Free Morning Pastry with Any Specialty Brew' },
+      { name: 'Myngenoegen Corner Bistro & Espresso', tier: 'champion' as const, category: 'Dining & Cafe' as const, deal: 'Free Morning Pastry with Any Specialty Brew' },
       { name: 'Valley View Eco Hardware & Nursery', tier: 'sponsor' as const, category: 'Home Services' as const, deal: '$15 Off Organic Gardening Supplies' },
       { name: 'Pine Hill Pet Care & Wellness', tier: 'champion' as const, category: 'Health & Wellness' as const, deal: '20% Off Grooming & First Exam' }
     ];
