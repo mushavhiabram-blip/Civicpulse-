@@ -148,7 +148,7 @@ class StoreService {
           id: `u-${Date.now()}`,
           date: new Date().toISOString().split('T')[0],
           status: newImp.status,
-          note: 'Project issue reported to Oakridge Society Board.',
+          note: 'Project issue reported to Myngenoegen DalmadaCommunity board.',
           author: newImp.reporterName
         }
       ]
