@@ -101,7 +101,7 @@ export const ImprovementsView: React.FC<ImprovementsViewProps> = ({
       <div className="bg-white border-2 border-amber-400 rounded-2xl p-4 shadow-lg">
         <h3 className="font-black text-slate-900 mb-2">📍 REAL EVIDENCE: Pothole in Polokwane - road.mp4</h3>
         <video controls playsInline className="w-full rounded-xl bg-black">
-          <source src="/road.mp4" type="video/mp4" />
+          <source src="/assets/road.mp4" type="video/mp4" />
         </video>
         <p className="text-xs text-slate-600 mt-2 font-medium">Live evidence for judges: CivicPulse AI detects & tracks this road repair</p>
       </div>
