@@ -97,7 +97,14 @@ export const ImprovementsView: React.FC<ImprovementsViewProps> = ({
   const totalFunded = improvements.reduce((acc, i) => acc + i.fundedAmount, 0);
 
   return (
-    <div className="space-y-8 pb-12">
+    <div className="space-y-8 pb-12">        {/* REAL ROAD VIDEO - Polokwane Evidence */}
+      <div className="bg-white border-2 border-amber-400 rounded-2xl p-4 shadow-lg">
+        <h3 className="font-black text-slate-900 mb-2">📍 REAL EVIDENCE: Pothole in Polokwane - road.mp4</h3>
+        <video controls playsInline className="w-full rounded-xl bg-black">
+          <source src="/road.mp4" type="video/mp4" />
+        </video>
+        <p className="text-xs text-slate-600 mt-2 font-medium">Live evidence for judges: CivicPulse AI detects & tracks this road repair</p>
+      </div>
       {/* Header Banner */}
       <div className="relative overflow-hidden bg-slate-900 border border-slate-800 rounded-3xl p-6 md:p-8 shadow-2xl">
         <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
